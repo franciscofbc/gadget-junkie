@@ -77,6 +77,7 @@ const CheckoutForm = () => {
     });
     if (payload.error) {
       setError(`payment failed ${payload.error.message}`);
+      console.log(error);
       setProcessing(false);
     } else {
       setError(null);
